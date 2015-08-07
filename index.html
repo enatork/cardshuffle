@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+<button onclick="ViewCtrl.createDeck()">make stack</button>
+<button onclick="ViewCtrl.shuffle()">shuffle stack</button>
+<br>
+<div>
+<select id="order1">
+    <option value="Hearts">Hearts</option>
+    <option value="Clubs">Clubs</option>
+    <option value="Spades">Spades</option>
+    <option value="Diamonds">Diamonds</option>
+</select>
+<select id="order2">
+    <option value="Hearts">Hearts</option>
+    <option value="Clubs">Clubs</option>
+    <option value="Spades">Spades</option>
+    <option value="Diamonds">Diamonds</option>
+</select>
+<select id="order3">
+    <option value="Hearts">Hearts</option>
+    <option value="Clubs">Clubs</option>
+    <option value="Spades">Spades</option>
+    <option value="Diamonds">Diamonds</option>
+</select>
+<select id="order4">
+    <option value="Hearts">Hearts</option>
+    <option value="Clubs">Clubs</option>
+    <option value="Spades">Spades</option>
+    <option value="Diamonds">Diamonds</option>
+</select>
+<button onclick="ViewCtrl.orderBySuit()">order by suit</button>
+</div>
+<ul id="cardStack"></ul>
+</body>
+<script src="js/Card.js"></script>
+<script src="js/Deck.js"></script>
+<script src="js/controllers/IndexCtrl.js"></script>
+<script>
+    var ViewCtrl = new ViewCtrl();
+</script>
+</html>
